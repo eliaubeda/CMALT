@@ -1,0 +1,762 @@
+
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+
+  }
+
+
+  body {
+    background-color: rgb(213,228,217);
+      color: rgb(28,28,28);
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      box-sizing: border-box;
+  }
+
+
+/* HEADER */
+.skip-to-content-link {
+  background-color: rgb(213,228,217);
+  color: rgb(28,28,28);
+  height: 40px;
+  padding: 8px;
+  position: absolute;
+  transform: translateY(-200%);
+  transition: transform 0.3s;
+}
+
+.skip-to-content-link:focus {
+  transform: translateY(0%);
+}
+
+header {
+  background-color: rgb(56,123,91);
+  color: rgb(249,249,249);
+  cursor: pointer;
+  padding-top: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+}
+
+
+.navbar a {
+  color: rgb(249,249,249);
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.dropdown-menu {
+  background-color: rgb(56,123,91);
+  color: rgb(249,249,249);
+}
+.dropdown-menu a {
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  text-decoration: underline;
+}
+
+ul{
+text-align: left;
+list-style-type: disc;
+}
+ul ul {
+  list-style-type: circle;
+}
+ul ul ul {
+  list-style-type: square;
+}
+
+.content a:link {
+  color: rgb(249,249,249);
+  font-size: 50px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.content a:visited {
+  color: rgb(249,249,249);
+  text-decoration: none;
+
+}
+.content a:hover {
+  text-decoration: underline;
+  color: rgb(249,249,249);
+}
+.content a:active {
+  color: rgb(249,249,249);
+  text-decoration: none;
+}
+
+.title{
+  width: 100%;
+  background-image: url("../images/pencils.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#title-content {
+  padding-left: 40%;
+  padding-right: 15%;
+  padding-top: 8%;
+  padding-bottom: 5%;
+  font-size: x-large;
+  color: rgb(28, 28, 28);
+}
+
+
+  #title-content > h1 {
+    font-size: 300%;
+  }
+
+@media screen and (max-width: 800px) {
+  #title-content > h1 {
+    font-size: x-large;
+  }
+  #title-content {
+    padding-left: 35%;
+    padding-right: 15%;
+    padding-top: 8%;
+    padding-bottom: 5%;
+    font-size: x-large;
+    color: rgb(28, 28, 28);
+  }
+}
+/* GENERAL */
+section {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 2%;
+/*  padding-bottom: 8%;*/
+}
+
+h2{
+  color: rgb(56,123,91);
+}
+
+
+a {
+ color: #610DFC;
+ text-decoration: underline;
+}
+
+
+/* HOME */
+.home {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 8%;
+/*  padding-bottom: 8%;*/
+}
+
+
+
+#profile {
+  padding-left: 10%;
+}
+
+#profile > div {
+  max-width: 100%;
+  padding: 0 4px;
+}
+
+.profile-pic > img {
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reflexio {
+  margin: auto;
+  width: 90%;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 25px;
+  padding-bottom: 0px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  }
+
+
+  .refle-pic > img {
+   margin-left: 50%;
+   
+  }
+  
+  #reflexio {
+    padding: 0px;
+  }
+
+  @media (max-width: 1200px) {
+    .reflexio {
+      width: 100%;
+      padding: 10px;
+    }
+    .refle-pic > img {
+      margin-left: 10%; 
+      margin-bottom: 10%;
+     }
+  }
+
+  .definition {
+    margin: auto;
+    width: 90%;
+    background-color: rgb(56,123,91);
+    color: rgb(249,249,249);
+    border-radius: 25px;
+    padding-bottom: 0%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+  }
+
+  
+  .definition img {
+    margin-left: 50%;
+  }
+
+  @media (max-width: 1200px) {
+    .definition {
+      width: 100%;
+      padding-left: 10%;
+    }
+
+    .definition img {
+      margin-left: 10%;
+      margin-bottom: 10%;
+    }
+
+  }
+.view-description {
+   background: none;
+  }
+
+.description button {
+  background-color: rgb(56,123,91);
+  color: rgb(249,249,249);
+}
+
+.description button:hover {
+
+  background-color: #1b4557;
+  color: rgb(249,249,249);
+}
+
+.view-description {
+  padding-left: 0%;
+}
+
+figcaption {
+padding-top: 5px;
+font-size: medium;
+}
+
+.evidence {
+  margin: auto;
+  width: 90%;
+}
+
+.evidence figure {
+  width: 75%;
+}
+
+@media screen and (max-width: 1200px) {
+  .evidence {
+    width: 100%;
+  }
+
+  .evidence figure {
+    width: 100%;
+  }
+  .evidence figure img {
+    width: 100%;
+  }
+}
+
+.evidence-float {
+  margin: auto;
+  width: 90%;
+}
+
+.evidence-float figure {
+  width: 75%;
+}
+
+@media screen and (max-width: 1200px) {
+  .evidence-float {
+    width: 100%;
+  }
+
+  .evidence-float figure {
+    width: 100%;
+  }
+  .evidence-float figure img {
+    width: 100%;
+  }
+}
+
+.step-title {
+  margin: auto;
+  padding: 20px 20px 5px 20px;
+  width: 75%;
+  background-color: rgb(56,123,91);
+  color: rgb(249,249,249);
+  border-radius: 25px 25px 0px 0px;
+}
+
+.step-content {
+  margin: auto;
+  padding: 10px;
+  width: 75%;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 0px 0px 25px 25px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .step-title {
+    width: 100%;
+  }
+
+  .step-content {
+    width: 100%;
+  }
+
+}
+
+.issue-title {
+  margin: auto;
+  padding: 20px 20px 5px 20px;
+  width: 100%;
+  background-color: rgb(56,123,91);
+  color: rgb(249,249,249);
+  border-radius: 25px 25px 0px 0px;
+}
+
+.issue-content {
+  margin: auto;
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 0px 0px 25px 25px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .issue-title {
+    width: 100%;
+  }
+
+  .issue-content {
+    width: 100%;
+  }
+
+}
+
+.connect p{
+  text-align: center;
+  font-size: xx-large;
+  
+}
+
+#research {
+  width: 100%;
+  float: left;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  padding: 20px;
+  margin-bottom: 8%;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+
+.artists {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 8%;
+}
+
+.artwork {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 8%;
+}
+
+
+
+.float {
+  display: flex;
+}
+
+
+.col-float{
+  flex: 90%;
+  padding-right: 20px;
+} 
+
+.col-float-pic{
+  flex: 200%;
+  padding-right: 20px;
+} 
+
+
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 1%;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* BACK TO TOP BUTTON*/
+
+#backtotop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(56,123,91); /* Set a background color */
+  color: rgb(249,249,249); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 0px; /* Rounded corners */
+  border: 5px solid black;
+  font-size: 18px; /* Increase font size */
+}
+
+#backtotop:hover {
+  background-color: rgb(213,228,217); /* Add a dark-grey background on hover */
+  color: rgb(28, 28, 28);
+}
+
+
+/* MODALS */
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+  z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 600px;
+  max-width: 100%;
+	position: relative;
+	margin: 10% auto;
+	padding: 20px 20px 13px 20px;
+	border-radius: 0px;
+  background-color: #f4ce42;
+  background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+	background: rgb(244, 206, 66);
+	background: -moz-linear-gradient(#fff, rgb(244, 206, 66));
+	background: -webkit-linear-gradient(#fff, rgb(244, 206, 66));
+	background: -o-linear-gradient(#fff, rgb(244, 206, 66));
+  color: black;
+}
+
+.modalDialog img {
+  max-width: 100%;
+}
+
+
+
+.modalDialogART {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.9);
+  z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+  max-height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.modalDialogART:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialogART > div {
+	box-sizing: border-box;
+  max-height: 100%;
+  color: white;
+	position: relative;
+	margin: 2% 5%;
+	padding: 20px 20px 13px 20px;
+	border-radius: 0px;
+  background-color: black;
+
+  /*
+  background-color: #f4ce42;
+  background-image: url("https://www.transparenttextures.com/patterns/absurdity.png"); */
+
+}
+
+.modalDialogART img {
+  box-sizing: border-box;
+  max-height: 700px;
+  height: 70%;
+  width: auto;
+
+}
+
+
+.artworkpicture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+.artworkdescription {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.artworkbuttons {
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.close {
+  background: #606061;
+	color: #FFFFFF;
+  	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+  text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+  -moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover {
+  background: #606061;
+color: #f4ce42
+
+}
+/* CONTENTS */
+.corearea > div{
+  padding: 3%;
+}
+
+.content-card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  color: rgb(249,249,249);
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(56,123,91);
+  border-radius: 25px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.core-areas {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.core-areas a {
+  text-decoration: none;
+}
+.core-areas a:hover{
+  text-decoration: underline;
+  color: rgb(249,249,249);
+}
+
+
+
+@media (max-width: 1200px) {
+  .content-to-hide {
+    display: none;
+  }
+  .core-areas {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+}
+
+#events {
+  width: 100%;
+  float: left;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+}
+
+
+#picture {
+  background-color: black;
+}
+ td {
+    vertical-align: middle;
+}
+
+
+
+
+.elmeuboto {
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(244, 206, 66);
+    -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+    width: 50%;
+    align-self: center;
+}
+.elmeuboto:hover {
+  background-color: rgb(244, 206, 66);
+  color: white;
+}
+
+
+/* ARTISTS*/
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+.card img {
+
+  border-radius: 5px 5px 0 0;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(213,228,217);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: rgb(28,28,28);
+    text-align: center;
+    font: 30px;
+
+}
+
+footer a {
+  color: rgb(28,28,28);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.attribution a{
+  font-size: 12px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  }
+
+
+#myFooter .linkedin:hover {
+  color: #0072b1;
+}
+
+
+
+#ReCSS {
+  max-width: 50%;
+}
+
+#box {
+  display: flex;
+  align-items: center;
+  max-width: 25%;
+  margin-left: auto;
+  font-size: 1vw;
+}
+#box img {
+max-width: 100%;
+}
